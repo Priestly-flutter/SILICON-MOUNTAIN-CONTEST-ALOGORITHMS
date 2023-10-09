@@ -11,20 +11,22 @@ int main(){
         scanf("%d",&unSortedList[i]);
     }
 
-    for (int i = 0; i < 4; i++)
+    for (int i = 0; i < 5; i++)
     {
         /* code */
-       
+       for (int j = 0; j <4-i ; j++)
+       {
+        /* code */
         int x;
-        int y;
-        x = unSortedList[i];
-        y = unSortedList[i+1];
+    
 
-        if(x > y){
+        if(unSortedList[j] > unSortedList[j+1]){
             //swaping elements in the list
-            unSortedList[i]= y;
-            unSortedList[i+1]= x;
+            x = unSortedList[j];
+            unSortedList[j]= unSortedList[j+1];
+            unSortedList[j + 1] =x ;
         }
+       }
     }
     for (int i = 0; i < 5; i++)
     {
