@@ -40,3 +40,6 @@ Compare 5 and 4. Since 5 is greater than 4, swap them.
 The list is now
 
 
+DAY 2
+
+Working on data structures in Python
