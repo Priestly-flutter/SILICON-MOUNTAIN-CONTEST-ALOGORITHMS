@@ -24,6 +24,7 @@ double average(const int a[], const double b[], int size){
     return (sum/size);
 }
 //main function
+//some of these functions above do rin, but are not in use
 int main() {
     int w[5]={1,2,3,4,5};
     double x[5] = {1.1,2.2,3.3,4.4,5.5};
