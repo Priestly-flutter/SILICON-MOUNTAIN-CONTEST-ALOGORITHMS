@@ -1,0 +1,60 @@
+Function OverLoading Explained by Jato Priestly
+
+detaily explian the sue and processes involved in function overloading in C++, providing code snippets
+and examples to illustrate key points.
+
+Here is a detailed explanation of function overloading in C++ with code examples:
+
+Function overloading is the ability to have multiple functions with the same name but different parameter lists. This allows functions to behave differently depending on the types and number of arguments passed to it.
+
+For functions to be considered overloaded, they must have:
+
+- Same function name
+- Different parameter lists 
+- Different return types are allowed but not required
+
+The compiler determines which function to call based on the number, type, and order of the arguments.
+
+Some key points about function overloading:
+
+- Parameters can be different in number, type or both.
+
+Example:
+
+```cpp
+void func(int x); 
+
+void func(double x);
+
+void func(int x, int y);
+```
+
+- Return type alone cannot be used for overloading, it must differ in parameters.
+
+- Overloaded functions may have default arguments.
+
+- Functions are distinguished at compile-time based on arguments, not return types.
+
+Example:
+
+```cpp
+int func(int x);
+
+double func(double x); 
+```
+
+- When calling overloaded functions, unambiguous match is required or compiler throws error.
+
+- Resolution is done at compile time, not runtime.
+
+Example:
+
+```cpp
+void func(int x);
+void func(double x);
+
+func(5); // matches int version
+func(5.5); // matches double version
+```
+
+This allows functions to perform different tasks based on types of inputs. It improves reusability and flexibility in C++.
